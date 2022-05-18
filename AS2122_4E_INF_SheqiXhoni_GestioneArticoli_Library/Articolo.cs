@@ -20,7 +20,7 @@
             this.prezzo = prezzo;
         }
 
-        public string ToString() {
+        public override string ToString() {
             return $"{descrizione} {unitaDiMisura} {prezzo} ({codice})";
         }
     }
