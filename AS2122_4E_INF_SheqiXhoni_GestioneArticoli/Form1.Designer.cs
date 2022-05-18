@@ -46,6 +46,15 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // lblPrezzo
+            // 
+            lblPrezzo.AutoSize = true;
+            lblPrezzo.Location = new System.Drawing.Point(75, 185);
+            lblPrezzo.Name = "lblPrezzo";
+            lblPrezzo.Size = new System.Drawing.Size(41, 15);
+            lblPrezzo.TabIndex = 3;
+            lblPrezzo.Text = "Prezzo";
+            // 
             // lblCodice
             // 
             this.lblCodice.AutoSize = true;
@@ -73,15 +82,6 @@
             this.lblUnitaMisura.TabIndex = 2;
             this.lblUnitaMisura.Text = "Unità Di Misura";
             // 
-            // lblPrezzo
-            // 
-            lblPrezzo.AutoSize = true;
-            lblPrezzo.Location = new System.Drawing.Point(75, 185);
-            lblPrezzo.Name = "lblPrezzo";
-            lblPrezzo.Size = new System.Drawing.Size(41, 15);
-            lblPrezzo.TabIndex = 3;
-            lblPrezzo.Text = "Prezzo";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(95, 238);
@@ -90,6 +90,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Aggiungi/modifica articolo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmbUnitaMisura
             // 
