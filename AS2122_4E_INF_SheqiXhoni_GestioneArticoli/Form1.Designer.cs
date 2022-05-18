@@ -171,6 +171,7 @@
             this.btnVisualizza.TabIndex = 12;
             this.btnVisualizza.Text = "...";
             this.btnVisualizza.UseVisualStyleBackColor = true;
+            this.btnVisualizza.Click += new System.EventHandler(this.btnVisualizza_Click);
             // 
             // lstVisualizza
             // 
