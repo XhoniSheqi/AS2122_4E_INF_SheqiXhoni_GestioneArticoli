@@ -13,7 +13,13 @@ namespace AS2122_4E_INF_SheqiXhoni_GestioneArticoli
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            if (articoli.ContainsKey(txtCodice.Text)) {
+                articoli[txtCodice.Text] = new Articolo(txtCodice.Text, cmbUnitaMisura.Text, txtDescrizione.Text, txtPrezzo.Text);
+            }
+            else
+            {
+                articoli.Add(txtCodice.Text , new Articolo(txtCodice.Text , cmbUnitaMisura.Text , txtDescrizione.Text , txtPrezzo.Text));
+            }
         }
     }
 }

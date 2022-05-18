@@ -95,6 +95,11 @@
             // cmbUnitaMisura
             // 
             this.cmbUnitaMisura.FormattingEnabled = true;
+            this.cmbUnitaMisura.Items.AddRange(new object[] {
+            "NR",
+            "KG",
+            "Q",
+            "T"});
             this.cmbUnitaMisura.Location = new System.Drawing.Point(166, 135);
             this.cmbUnitaMisura.Name = "cmbUnitaMisura";
             this.cmbUnitaMisura.Size = new System.Drawing.Size(46, 23);
@@ -151,6 +156,8 @@
             // cmdVisualizzaArticoli
             // 
             this.cmdVisualizzaArticoli.FormattingEnabled = true;
+            this.cmdVisualizzaArticoli.Items.AddRange(new object[] {
+            "Visualizza Articoli "});
             this.cmdVisualizzaArticoli.Location = new System.Drawing.Point(730, 106);
             this.cmdVisualizzaArticoli.Name = "cmdVisualizzaArticoli";
             this.cmdVisualizzaArticoli.Size = new System.Drawing.Size(121, 23);
