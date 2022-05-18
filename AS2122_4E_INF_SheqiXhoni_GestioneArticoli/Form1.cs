@@ -30,7 +30,20 @@ namespace AS2122_4E_INF_SheqiXhoni_GestioneArticoli
             foreach (KeyValuePair<string , Articolo> a in articoli) {
                 lstVisualizza.Items.Add(a.ToString());
                 lblArticoliNumerati.Text = $"Articolo {count}";
+                count++;
             }
+        }
+
+        private void lstVisualizza_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string curItem = lstVisualizza.SelectedItem.ToString();
+
+            // Find the string in ListBox.
+            int index = lstVisualizza.FindString(curItem);
+
+            // visualizzazione dettaglio articolo nei textbox/combo
+            // https://stackoverflow.com/questions/11000079/retrieve-dictionary-item-by-number
+            txtCodice.Text = articoli.ElementAt(index).Value.Codice;
         }
     }
 }
