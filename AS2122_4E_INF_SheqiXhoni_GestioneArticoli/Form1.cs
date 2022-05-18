@@ -25,8 +25,11 @@ namespace AS2122_4E_INF_SheqiXhoni_GestioneArticoli
 
         private void btnVisualizza_Click(object sender, EventArgs e)
         {
+            lstVisualizza.Items.Clear();
+            int count = 1;
             foreach (KeyValuePair<string , Articolo> a in articoli) {
                 lstVisualizza.Items.Add(a.ToString());
+                lblArticoliNumerati.Text = $"Articolo {count}";
             }
         }
     }
