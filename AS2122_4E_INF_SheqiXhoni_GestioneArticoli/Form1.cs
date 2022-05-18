@@ -6,5 +6,10 @@ namespace AS2122_4E_INF_SheqiXhoni_GestioneArticoli
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
